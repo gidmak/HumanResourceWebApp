@@ -22,6 +22,30 @@ namespace HumanResourceWebApp.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public ActionResult Validate(Admin admin)
+        {
+            var _admin = _db.Admins.Where(s => s.Email == admin.Email);
+            if (_admin.Any())
+            {
+                if(_admin.Where(s=>s.Password == admin.Password).Any())
+                {
+                    return Json(new { status = true, message = "Login successful!" });
+                }
+                else
+                {
+                    return Json(new { status = false, message = "Invalid password" }); 
+                }
+            }
+            else
+            {
+                return Json(new { status = false, message = "Invalid email" });
+            }
+        }
         public async Task<IActionResult> Upsert(int? id)
         {
             Admins = new Admin();

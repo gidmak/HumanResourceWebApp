@@ -16,7 +16,7 @@ function loadDataTable() {
             { "data": "middleName", "width": "15%" },
             { "data": "lastName", "width": "15%" },
             { "data": "email", "width": "25%" },
-            { "data": "Password", "width": "15%" },
+            { "data": "password", "width": "15%" },
             {
                 "data": "id",
                 "render": function (data) {
