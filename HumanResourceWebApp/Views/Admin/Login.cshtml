@@ -29,3 +29,27 @@
         </div>
     </div>
 </div>
+<script>
+    function Validate() {
+        $.ajax({
+            type: "POSt",
+            url: '@Url.Action("Validate", "Admin")',
+            data: {
+                email: $("#email").val(),
+                password: $("#password").val()
+            },
+            error: function (result) {
+                alert("There was a problem, try again!");
+            },
+            success: function (result) {
+                console.log(result);
+                if (result.status == true) {
+                    window.location.href = '@Url.Action("Index","Admin")';
+                }
+                else {
+                    alert(result.message);
+                }
+            }
+        });
+    }
+</script>
