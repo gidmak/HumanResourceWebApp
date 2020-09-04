@@ -17,5 +17,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<Department> Departments { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Education> Educations { get; set; }
     }
 }
