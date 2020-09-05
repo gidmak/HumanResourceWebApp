@@ -20,5 +20,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<Education> Educations { get; set; }
         public DbSet<Licenses> Licenses{ get; set; }
         public DbSet<Language> Languages { get; set; }
+        public DbSet<Membership> Memberships{ get; set; }
     }
 }
