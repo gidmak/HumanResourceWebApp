@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\EDependant.cs" />
     <Compile Remove="Models\Users.cs" />
   </ItemGroup>
 
