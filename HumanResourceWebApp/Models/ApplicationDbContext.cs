@@ -24,5 +24,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<Country> Countries { get; set; }
         public DbSet<Nationality> Nationalities{ get; set; }
         public DbSet<JobTitle> JobTitles { get; set; }
+        public DbSet<Currency> Currencies{ get; set; }
     }
 }
