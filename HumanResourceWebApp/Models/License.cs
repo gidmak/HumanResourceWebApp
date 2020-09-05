@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HumanResourceWebApp.Models
 {
-    public class Licenses
+    public class License
     {
         [Key]
         public int Id { get; set; }

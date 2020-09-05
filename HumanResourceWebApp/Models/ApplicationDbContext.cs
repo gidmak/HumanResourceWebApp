@@ -18,7 +18,7 @@ namespace HumanResourceWebApp.Models
         public DbSet<Role> Roles { get; set; }
         public DbSet<Skill> Skills { get; set; }
         public DbSet<Education> Educations { get; set; }
-        public DbSet<Licenses> Licenses{ get; set; }
+        public DbSet<License> Licenses{ get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<Membership> Memberships{ get; set; }
         public DbSet<Country> Countries { get; set; }
@@ -41,5 +41,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<EEducation> EEducations { get; set; }
         public DbSet<ESkill> ESkills { get; set; }
         public DbSet<ELanguage> ELanguages { get; set; }
+        public DbSet<ELicense> ELicenses { get; set; }
     }
 }
