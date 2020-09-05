@@ -26,5 +26,7 @@ namespace HumanResourceWebApp.Models
         public DbSet<JobTitle> JobTitles { get; set; }
         public DbSet<Currency> Currencies{ get; set; }
         public DbSet<PayGrade> PayGrades { get; set; }
+        public DbSet<EmploymentStatus> EmploymentStatuses{ get; set; }
+        public DbSet<JobCategory> JobCategories { get; set; }
     }
 }
