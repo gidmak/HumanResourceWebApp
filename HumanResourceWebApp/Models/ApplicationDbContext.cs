@@ -36,5 +36,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<EImmigration> EImmigrations{ get; set; }
         public DbSet<EJob> EJobs { get; set; }
         public DbSet<ESalary> ESalaries { get; set; }
+        public DbSet<EMembership> EMemberships { get; set; }
     }
 }
