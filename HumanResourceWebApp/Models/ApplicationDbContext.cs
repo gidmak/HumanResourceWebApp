@@ -31,5 +31,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<CompanyInformation> CompanyInformation { get; set; }
         public DbSet<CompanyBranch> CompanyBranches { get; set; }
         public DbSet<EContactDetail> EContactDetails { get; set; }
+        public DbSet<EEmergencyContact> EEmergencyContacts { get; set; }
     }
 }
