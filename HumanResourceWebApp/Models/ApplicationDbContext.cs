@@ -39,5 +39,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<EMembership> EMemberships { get; set; }
         public DbSet<EWorkExperience> EWorkExperiences { get; set; }
         public DbSet<EEducation> EEducations { get; set; }
+        public DbSet<ESkill> ESkills { get; set; }
     }
 }
