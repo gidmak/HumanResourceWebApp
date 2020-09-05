@@ -23,5 +23,6 @@ namespace HumanResourceWebApp.Models
         public DbSet<Membership> Memberships{ get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Nationality> Nationalities{ get; set; }
+        public DbSet<JobTitle> JobTitles { get; set; }
     }
 }
